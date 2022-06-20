@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "425px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
+    <title>HW3-5</title>
+  </head>
+
+  <body>
+    <div class="relative">
+      <div
+        class="w-full h-[540px] relative bg-[url('./header-session-2.jpg')] bg-center bg-cover bg-no-repeat"
+      >
+        <div class="absolute top-24 left-12 z-50 text-white">
+          <h2 class="text-5xl font-bold mb-6">Support</h2>
+          <p class="text-slate-300 text-xl font-light">
+            Varius facillis mauris sed sit. Non sed et duis dui leo, vulputate
+            id malesuada non.
+          </p>
+          <p class="text-slate-300 text-lg font-light">
+            Cras aliquet purus dui laoreet diam sed lacus, fames. Dui, amet, nec
+            sit pulvinar.
+          </p>
+        </div>
+      </div>
+
+      <div class="absolute top-[440px] w-full flex mx-auto">
+        <div class="bg-white w-96 rounded-lg drop-shadow-md relative">
+          <img
+            src="./phone.png"
+            class="w-12 p-3 bg-indigo-600 rounded-md drop-shadow-md absolute -top-6 left-6"
+          />
+          <h4 class="text-lg mt-12 mx-6">Sales</h4>
+          <p class="text-gray-500 m-6">
+            Varius facillis mauris sed sit. Non sed et duis dui leo, vulputate
+            id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
+            fames. Dui, amet, nec sit pulvinar.
+          </p>
+          <a
+            href="#"
+            class="block w-full py-3 pl-6 bg-gray-200 text-indigo-600 rounded-b-lg"
+            >Contact us <img src="" class=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

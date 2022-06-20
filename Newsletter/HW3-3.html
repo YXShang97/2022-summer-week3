@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "425px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
+    <title>HW3-3</title>
+  </head>
+  <body>
+    <svg width="404" height="392" fill="none" viewBox="0 0 404 392">
+      <defs>
+        <pattern
+          id="8228f071-bcee-4ec8-905a-2a059a2cc4fb"
+          x="0"
+          y="0"
+          width="20"
+          height="20"
+          patternUnits="userSpaceOnUse"
+        >
+          <rect
+            x="0"
+            y="0"
+            width="4"
+            height="4"
+            class="text-gray-200"
+            fill="currentColor"
+          />
+        </pattern>
+      </defs>
+      <rect
+        width="404"
+        height="392"
+        fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)"
+      />
+    </svg>
+
+    <div
+      class="relative py-12 px-6 bg-indigo-600 md:flex md:flex-col md:items-center max-w-5xl rounded-lg"
+    >
+      <svg
+        class="absolute z-0"
+        preserveAspectRatio="xMidYMid slice"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 1463 360"
+      >
+        <path
+          class="text-indigo-500 text-opacity-40"
+          fill="currentColor"
+          d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
+        />
+        <path
+          class="text-indigo-700 text-opacity-40"
+          fill="currentColor"
+          d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
+        />
+      </svg>
+      <h2 class="text-3xl md:text-4xl md:text-center lg:text-3xl">
+        <span class="block text-white font-bold"
+          >Got notified when we're launching.</span
+        >
+        <span
+          class="block text-indigo-200 font-extralight text-xl mt-4 max-w-2xl"
+        >
+          Sagittid scelerisque nulla curcus in enim consectetur quam. Dictum
+          urna sed consectetur neque tristique pellentesque.
+        </span>
+      </h2>
+      <form class="z-50 mt-10 mb-2">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="border border-slate-300 rounded-md text-sm placeholder-slate-400 placeholder:text-md w-full md:w-80 p-3 md:mr-2 mb-3 md:mb-0"
+        />
+        <input
+          type="submit"
+          value="Notify me"
+          class="w-full md:w-fit px-6 py-3 bg-indigo-400 border-indigo-400 rounded-md text-white text-md leading-5"
+        />
+      </form>
+    </div>
+  </body>
+</html>
