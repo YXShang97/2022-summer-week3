@@ -17,23 +17,32 @@
       //   let num2 = +prompt("please enter number 2:");
       //   alert(`The sum of number 1 and number 2 is ${num1 + num2}`);
 
-      //   function readNumber() {
-      //     let inputNumber = +prompt("please enter a number");
-      //     while (typeof inputNumber !== "number") {
-      //       if (inputNumber === "" || inputNumber === null) {
-      //         break;
-      //       } else {
-      //         inputNumber = +prompt("please enter a valid number");
-      //       }
+      // function readNumber() {
+      //   let inputNumber = +prompt("please enter a number");
+      //   while (typeof inputNumber !== "number") {
+      //     if (inputNumber === "" || inputNumber === null) {
+      //       break;
+      //     } else {
+      //       inputNumber = +prompt("please enter a valid number");
       //     }
-      //     alert(inputNumber);
       //   }
-      //   readNumber();
+      //   alert(inputNumber);
+      // }
 
-      let num;
-      do {
-        num = prompt("Enter a number greater than 100?", 0);
-      } while (num <= 100 && num);
+      function readNumber() {
+        while (true) {
+          let inputNumber = prompt("please enter a number");
+          if (inputNumber === null) {
+            alert(null);
+            break;
+          }
+          if (isNaN(+inputNumber) === false) {
+            alert(inputNumber);
+            break;
+          }
+        }
+      }
+      readNumber();
     </script>
   </body>
 </html>
