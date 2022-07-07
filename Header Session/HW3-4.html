@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "425px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
+    <title>HW3-4</title>
+  </head>
+  <body>
+    <div class="text-center mt-12 mx-6 max-w-7xl lg:mx-auto">
+      <p class="text-indigo-600 text-sm font-bold mb-2">PRICING</p>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-wide mb-6">
+        Take control of your team.
+      </h1>
+      <span
+        class="inline lg:block text-xl md:text-md text-gray-500 font-light tracking-wide"
+        >Start building for free, then add a site plan to go live.</span
+      >
+      <span
+        class="inline lg:block text-xl md:text-md text-gray-500 font-light tracking-wide"
+        >Account plans unlock additional features.</span
+      >
+    </div>
+  </body>
+</html>

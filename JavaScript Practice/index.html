@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function ucFirst(name) {
+      //     return name[0].toUpperCase() + name.substr(1, name.length - 1);
+      //   }
+      //   console.log(ucFirst("john"));
+
+      //   let num1 = +prompt("please enter number 1:");
+      //   let num2 = +prompt("please enter number 2:");
+      //   alert(`The sum of number 1 and number 2 is ${num1 + num2}`);
+
+      // function readNumber() {
+      //   let inputNumber = +prompt("please enter a number");
+      //   while (typeof inputNumber !== "number") {
+      //     if (inputNumber === "" || inputNumber === null) {
+      //       break;
+      //     } else {
+      //       inputNumber = +prompt("please enter a valid number");
+      //     }
+      //   }
+      //   alert(inputNumber);
+      // }
+
+      function readNumber() {
+        while (true) {
+          let inputNumber = prompt("please enter a number");
+          if (inputNumber === null) {
+            alert(null);
+            break;
+          }
+          if (isNaN(+inputNumber) === false) {
+            alert(inputNumber);
+            break;
+          }
+        }
+      }
+      readNumber();
+    </script>
+  </body>
+</html>
